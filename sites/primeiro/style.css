@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    font-size: 1.25rem;
+    height: 100%;
+    background-color: #333;
+}
+
+.blueBg {
+    background-color: hsl(240, 82%, 39%);
+    color: white;
+}
+
+
+
+.linkdeco > a{
+    display: grid;
+    grid
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    
+}
+
