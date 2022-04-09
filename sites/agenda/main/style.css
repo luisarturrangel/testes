@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+/* box-sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/*remove list style on ul, ol */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.4;
+}
+
+/* A elements that don't have a class get defaut */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove all animations, transitions and smooth */
+@media (prefers-reduced-motion: reduce) {
+  htmo:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+    --color60: hsl(236, 100%, 13%);
+    --color30: hsl(0, 0%, 0%);
+    --color10: hsl(287, 89%, 38%);
+    --fonte: 'Rubik', Arial, sans-serif;
+    --fw500: 500;
+}
+
+/* inicio */
+
+body {
+    background-color: var(--color60);
+}
+
+
+/* utility */
+
+.flexbox {
+    display: flex;
+}
+
+.spaceflex {
+    justify-content: space-between;
+}
+
+.centerflex {
+    align-items: center;
+} 
+
+/* boxes */
+
+
+
+/* custom */
+
+#card {
+    color: white;
+}
+
+header {
+    height: 4em;
+}
+
+#plus {
+    margin: 4em;
+    font-family: var(--fonte);
+    font-weight: var(--fw500);
+    border-radius: 2px;
+    border: none;
+}
+
+.btn > button:hover {
+    cursor: pointer;
+    background-color: var(--color10);
+}
+
+
+.data {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 4em;
+}
+
