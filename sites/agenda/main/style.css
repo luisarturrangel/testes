@@ -87,10 +87,24 @@ select {
 
 body {
     background-color: var(--color60);
+    font-family: var(--fonte);
+}
+
+h1 {
+    color: white;
+    text-align: center;
 }
 
 
 /* utility */
+
+.gridbox {
+    display: grid;
+}
+
+.spacegrid {
+    gap: 2em;
+}
 
 .flexbox {
     display: flex;
@@ -106,9 +120,62 @@ body {
 
 /* boxes */
 
+.modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.3);
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: o;
+    height: 100vh;
+    width: 100vw;
+}
 
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+.modal {
+    background-color: var(--color60);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5%;
+    padding: 80px 40px;
+    width: 400px;
+    max-width: 100%;
+}
 
 /* custom */
+
+form > button {
+    border: none;
+    background-color: var(--color10);
+    border-radius: 16px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+form > button:hover {
+    background-color: var(--color10);
+    cursor: pointer;
+}
+
+.plus > button {
+    border: none;
+    border-radius: 2px;
+    margin: 4em;
+    font-weight: var(--fw500);
+}
+
+.plus > button:hover {
+    background-color: var(--color10);
+    cursor: pointer;
+}
 
 #card {
     color: white;
@@ -118,22 +185,8 @@ header {
     height: 4em;
 }
 
-#plus {
-    margin: 4em;
-    font-family: var(--fonte);
-    font-weight: var(--fw500);
-    border-radius: 2px;
-    border: none;
-}
-
-.btn > button:hover {
-    cursor: pointer;
-    background-color: var(--color10);
-}
-
-
 .data {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte);
     font-weight: bold;
     color: white;
     margin: 4em;
